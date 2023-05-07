@@ -117,13 +117,13 @@ public class MarsLaunch {
     private static final int ASCII = 2;// memory and register display format
     private ArrayList registerDisplayList;
     private ArrayList memoryDisplayList;
-    private ArrayList filenameList;
+    private ArrayList<String> filenameList;
     private MIPSprogram code;
     private int maxSteps;
     private int instructionCount;
     private PrintStream out; // stream for display of command line output
     private ArrayList dumpTriples = null; // each element holds 3 arguments for dump option
-    private ArrayList programArgumentList; // optional program args for MIPS program (becomes argc, argv)
+    private ArrayList<String> programArgumentList; // optional program args for MIPS program (becomes argc, argv)
     private int assembleErrorExitCode;  // MARS command exit code to return if assemble error occurs
     private int simulateErrorExitCode;// MARS command exit code to return if simulation error occurs
 
@@ -257,7 +257,7 @@ public class MarsLaunch {
         String displayMessagesToErrSwitch = "me";
         boolean argsOK = true;
         boolean inProgramArgumentList = false;
-        programArgumentList = null;
+        programArgumentList = new ArrayList<>();
         if (args.length == 0)
             return true; // should not get here...
         // If the option to display MARS messages to standard erro is used,
@@ -273,9 +273,6 @@ public class MarsLaunch {
             // We have seen "pa" switch, so all remaining args are program args
             // that will become "argc" and "argv" for the MIPS program.
             if (inProgramArgumentList) {
-                if (programArgumentList == null) {
-                    programArgumentList = new ArrayList();
-                }
                 programArgumentList.add(args[i]);
                 continue;
             }
@@ -454,7 +451,8 @@ public class MarsLaunch {
         try {
             Globals.getSettings().setBooleanSettingNonPersistent(Settings.DELAYED_BRANCHING_ENABLED, delayedBranching);
             Globals.getSettings().setBooleanSettingNonPersistent(Settings.SELF_MODIFYING_CODE_ENABLED, selfModifyingCode);
-            File mainFile = new File((String) filenameList.get(0)).getAbsoluteFile();// First file is "main" file
+            String mainFileName =  filenameList.get(0);
+            File mainFile = new File(mainFileName).getAbsoluteFile();// First file is "main" file
             ArrayList filesToAssemble;
             if (assembleProject) {
                 filesToAssemble = FilenameFinder.getFilenameList(mainFile.getParent(), Globals.fileExtensions);
@@ -493,7 +491,9 @@ public class MarsLaunch {
             }
             RegisterFile.initializeProgramCounter(startAtMain); // DPS 3/9/09
             if (simulate) {
-                // store program args (if any) in MIPS memory
+                // store program args in MIPS memory
+                // Name of file to run is always first program arg
+                programArgumentList.add(0, mainFileName);
                 new ProgramArgumentList(programArgumentList).storeProgramArguments();
                 // establish observer if specified
                 establishObserver();
