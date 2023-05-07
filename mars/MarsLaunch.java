@@ -493,8 +493,7 @@ public class MarsLaunch {
             if (simulate) {
                 // store program args in MIPS memory
                 // Name of file to run is always first program arg
-                programArgumentList.add(0, mainFileName);
-                new ProgramArgumentList(programArgumentList).storeProgramArguments();
+                new ProgramArgumentList(mainFileName, programArgumentList).storeProgramArguments();
                 // establish observer if specified
                 establishObserver();
                 if (Globals.debug) {

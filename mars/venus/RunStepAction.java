@@ -121,10 +121,12 @@ public class RunStepAction extends GuiAction {
     // $a0 gets argument count (argc), $a1 gets stack address of first arg pointer (argv).
     private void processProgramArgumentsIfAny() {
         String programArguments = executePane.getTextSegmentWindow().getProgramArguments();
-        if (programArguments == null || programArguments.length() == 0 ||
-                !Globals.getSettings().getProgramArguments()) {
+        if ( !Globals.getSettings().getProgramArguments()) {
             return;
         }
-        new ProgramArgumentList(programArguments).storeProgramArguments();
+        if (programArguments == null) {
+            programArguments = "";
+        }
+        new ProgramArgumentList(FileStatus.getFile().getName(), programArguments).storeProgramArguments();
     }
 }

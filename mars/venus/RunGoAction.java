@@ -202,8 +202,7 @@ public class RunGoAction extends GuiAction {
         if (programArguments == null) {
             programArguments = "";
         }
-        programArguments = FileStatus.getFile().getName() + " " + programArguments;
-        new ProgramArgumentList(programArguments).storeProgramArguments();
+        new ProgramArgumentList(FileStatus.getFile().getName(), programArguments).storeProgramArguments();
     }
 
 

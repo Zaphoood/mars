@@ -49,7 +49,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 public class ProgramArgumentList {
 
-    ArrayList programArgumentList;
+    ArrayList<String> programArgumentList;
 
     /**
      * Constructor that parses string to produce list.  Delimiters
@@ -58,9 +58,10 @@ public class ProgramArgumentList {
      *
      * @param args String containing delimiter-separated arguments
      */
-    public ProgramArgumentList(String args) {
+    public ProgramArgumentList(String programName, String args) {
         StringTokenizer st = new StringTokenizer(args);
-        programArgumentList = new ArrayList(st.countTokens());
+        programArgumentList = new ArrayList<>(st.countTokens() + 1);
+        programArgumentList.add(programName);
         while (st.hasMoreTokens()) {
             programArgumentList.add(st.nextToken());
         }
@@ -95,8 +96,8 @@ public class ProgramArgumentList {
      *
      * @param list ArrayList of String, each element containing one argument
      */
-    public ProgramArgumentList(ArrayList list) {
-        this(list, 0);
+    public ProgramArgumentList(String programName, ArrayList<String> args) {
+        this(programName, args, 0);
     }
 
 
@@ -108,14 +109,14 @@ public class ProgramArgumentList {
      * @param startPosition Index of array element containing the first argument; all remaining
      *                      elements are assumed to contain an argument.
      */
-    public ProgramArgumentList(ArrayList list, int startPosition) {
-        if (list == null || list.size() < startPosition) {
-            programArgumentList = new ArrayList(0);
-        } else {
-            programArgumentList = new ArrayList(list.size() - startPosition);
-            for (int i = startPosition; i < list.size(); i++) {
-                programArgumentList.add(list.get(i));
-            }
+    public ProgramArgumentList(String programName, ArrayList<String> args, int startPosition) {
+        programArgumentList = new ArrayList<>();
+        programArgumentList.add(programName);
+        if (args == null || args.size() < startPosition) {
+            return;
+        }
+        for (int i = startPosition; i < args.size(); i++) {
+            programArgumentList.add(args.get(i));
         }
     }
 
