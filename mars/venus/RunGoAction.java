@@ -195,11 +195,14 @@ public class RunGoAction extends GuiAction {
     // Argument pointers and count go into runtime stack and $sp is adjusted accordingly.
     // $a0 gets argument count (argc), $a1 gets stack address of first arg pointer (argv).
     private void processProgramArgumentsIfAny() {
-        String programArguments = executePane.getTextSegmentWindow().getProgramArguments();
-        if (programArguments == null || programArguments.length() == 0 ||
-                !Globals.getSettings().getProgramArguments()) {
+        if (!Globals.getSettings().getProgramArguments()) {
             return;
         }
+        String programArguments = executePane.getTextSegmentWindow().getProgramArguments();
+        if (programArguments == null) {
+            programArguments = "";
+        }
+        programArguments = FileStatus.getFile().getName() + " " + programArguments;
         new ProgramArgumentList(programArguments).storeProgramArguments();
     }
 
