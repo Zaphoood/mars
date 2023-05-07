@@ -1,19 +1,22 @@
 package mars.venus;
 
-import mars.mips.hardware.*;
-import mars.util.*;
-import mars.*;
+import mars.Globals;
+import mars.MIPSprogram;
+import mars.ProcessingException;
+import mars.mips.hardware.RegisterFile;
+import mars.util.FilenameFinder;
 
 import javax.swing.*;
-import javax.swing.event.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.undo.*;
-import java.text.*;
-import java.util.*;
-import java.io.*;
-import java.beans.PropertyChangeListener;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.filechooser.FileFilter;
+import java.awt.*;
+import java.beans.PropertyChangeListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
 		
 	/*
 Copyright (c) 2003-2010,  Pete Sanderson and Kenneth Vollmar

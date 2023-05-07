@@ -1,7 +1,7 @@
 package mars;
 
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 /*
 Copyright (c) 2003-2010,  Pete Sanderson and Kenneth Vollmar

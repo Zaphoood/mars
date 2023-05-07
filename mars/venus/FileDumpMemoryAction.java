@@ -1,17 +1,24 @@
 package mars.venus;
 
-import mars.*;
-import mars.util.*;
-import mars.mips.dump.*;
-import mars.mips.hardware.*;
+import mars.Globals;
+import mars.mips.dump.DumpFormat;
+import mars.mips.dump.DumpFormatLoader;
+import mars.mips.hardware.AddressErrorException;
+import mars.mips.hardware.Memory;
+import mars.util.Binary;
+import mars.util.MemoryDump;
 
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.border.*;
-import java.io.*;
-import java.util.*;
-import javax.swing.plaf.basic.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.plaf.basic.BasicComboBoxRenderer;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 	
 	/*
 Copyright (c) 2003-2008,  Pete Sanderson and Kenneth Vollmar

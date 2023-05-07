@@ -1,14 +1,13 @@
 package mars.venus;
 
-import mars.tools.*;
-import mars.util.*;
+import mars.tools.MarsTool;
+import mars.util.FilenameFinder;
 
 import javax.swing.*;
-import java.awt.event.*;
-import java.io.*;
-import java.util.*;
-import java.util.zip.*;
-import java.lang.reflect.*;
+import java.awt.event.KeyEvent;
+import java.lang.reflect.Modifier;
+import java.util.ArrayList;
+import java.util.HashMap;
 	
 	/*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

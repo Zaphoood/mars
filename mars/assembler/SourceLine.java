@@ -1,8 +1,6 @@
 package mars.assembler;
 
-import mars.*;
-
-import java.util.*;
+import mars.MIPSprogram;
 
 /*
 Copyright (c) 2003-2013,  Pete Sanderson and Kenneth Vollmar

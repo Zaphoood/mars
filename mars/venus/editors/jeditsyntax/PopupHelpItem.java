@@ -1,4 +1,3 @@
-
 /*
 Copyright (c) 2003-2010,  Pete Sanderson and Kenneth Vollmar
 

@@ -1,19 +1,20 @@
 package mars.venus;
 
-import mars.simulator.*;
-import mars.*;
-import mars.util.*;
-import mars.venus.editors.jeditsyntax.*;
-import mars.venus.editors.jeditsyntax.tokenmarker.*;
+import mars.Globals;
+import mars.Settings;
+import mars.venus.editors.jeditsyntax.SyntaxStyle;
+import mars.venus.editors.jeditsyntax.SyntaxUtilities;
+import mars.venus.editors.jeditsyntax.tokenmarker.MIPSTokenMarker;
 
-import java.util.*;
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import javax.swing.text.Caret;
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import java.io.*;
 	
 	/*
 Copyright (c) 2003-2011,  Pete Sanderson and Kenneth Vollmar

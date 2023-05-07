@@ -1,15 +1,6 @@
 package mars.assembler;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-
-import mars.ErrorList;
-import mars.ErrorMessage;
-import mars.Globals;
-import mars.MIPSprogram;
-import mars.ProcessingException;
-import mars.ProgramStatement;
+import mars.*;
 import mars.mips.hardware.AddressErrorException;
 import mars.mips.hardware.Memory;
 import mars.mips.instructions.BasicInstruction;
@@ -17,6 +8,10 @@ import mars.mips.instructions.ExtendedInstruction;
 import mars.mips.instructions.Instruction;
 import mars.util.Binary;
 import mars.util.SystemIO;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /*
  Copyright (c) 2003-2012,  Pete Sanderson and Kenneth Vollmar

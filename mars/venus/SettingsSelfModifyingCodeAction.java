@@ -1,13 +1,10 @@
 package mars.venus;
 
-import mars.simulator.*;
-import mars.*;
+import mars.Globals;
+import mars.Settings;
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import java.io.*;
+import java.awt.event.ActionEvent;
 	
 	/*
 Copyright (c) 2003-2013,  Pete Sanderson and Kenneth Vollmar

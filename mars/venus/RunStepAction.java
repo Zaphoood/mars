@@ -1,12 +1,13 @@
 package mars.venus;
 
-import mars.*;
-import mars.simulator.*;
-import mars.mips.hardware.*;
+import mars.Globals;
+import mars.ProcessingException;
+import mars.mips.hardware.RegisterFile;
+import mars.simulator.ProgramArgumentList;
+import mars.simulator.Simulator;
 
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 	
 	/*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar
@@ -121,7 +122,7 @@ public class RunStepAction extends GuiAction {
     // $a0 gets argument count (argc), $a1 gets stack address of first arg pointer (argv).
     private void processProgramArgumentsIfAny() {
         String programArguments = executePane.getTextSegmentWindow().getProgramArguments();
-        if ( !Globals.getSettings().getProgramArguments()) {
+        if (!Globals.getSettings().getProgramArguments()) {
             return;
         }
         if (programArguments == null) {

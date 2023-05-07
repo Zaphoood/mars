@@ -1,10 +1,12 @@
 package mars.assembler;
 
-import mars.*;
+import mars.ErrorList;
+import mars.ErrorMessage;
+import mars.Globals;
+import mars.mips.instructions.Instruction;
 import mars.util.Binary;
-import mars.mips.instructions.*;
 
-import java.util.*;
+import java.util.ArrayList;
 
 /*
 Copyright (c) 2003-2008,  Pete Sanderson and Kenneth Vollmar

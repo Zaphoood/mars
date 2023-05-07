@@ -1,10 +1,9 @@
 package mars.venus;
 
-import mars.*;
+import mars.Globals;
 
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 	
 	/*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

@@ -1,18 +1,24 @@
 package mars.venus;
 
-import mars.*;
+import mars.Globals;
+import mars.Settings;
 import mars.venus.editors.MARSTextEditingArea;
 import mars.venus.editors.generic.GenericTextArea;
 import mars.venus.editors.jeditsyntax.JEditBasedTextArea;
 
 import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.undo.CompoundEdit;
+import javax.swing.undo.UndoManager;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.undo.*;
-import java.text.*;
-import java.util.*;
-import java.io.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.Observable;
+import java.util.Observer;
 
 /*
 Copyright (c) 2003-2011,  Pete Sanderson and Kenneth Vollmar

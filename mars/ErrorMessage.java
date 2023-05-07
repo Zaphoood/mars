@@ -1,8 +1,8 @@
 package mars;
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 /*
 Copyright (c) 2003-2012,  Pete Sanderson and Kenneth Vollmar
 

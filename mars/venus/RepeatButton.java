@@ -1,10 +1,10 @@
 package mars.venus;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
 import javax.swing.*;
-import javax.swing.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 /////////////////////////////  CREDIT  /////////////////////////////////////
 // http://forums.sun.com/thread.jspa?threadID=499183&messageID=2505646

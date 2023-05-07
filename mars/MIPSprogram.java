@@ -1,14 +1,14 @@
 package mars;
 
-import mars.venus.*;
 import mars.assembler.*;
-import mars.simulator.*;
-import mars.mips.hardware.*;
+import mars.mips.hardware.RegisterFile;
+import mars.simulator.BackStepper;
+import mars.simulator.Simulator;
 
-import java.util.*;
-import java.io.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
 
 /*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

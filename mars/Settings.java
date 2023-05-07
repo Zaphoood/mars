@@ -1,14 +1,15 @@
 package mars;
 
-import mars.*;
-import mars.util.*;
-import mars.venus.editors.jeditsyntax.*;
+import mars.util.Binary;
+import mars.util.EditorFont;
+import mars.venus.editors.jeditsyntax.SyntaxStyle;
+import mars.venus.editors.jeditsyntax.SyntaxUtilities;
 
-import java.io.*;
-import java.util.*;
-import java.util.prefs.*;
-import java.awt.Color;
-import java.awt.Font;
+import java.awt.*;
+import java.util.Observable;
+import java.util.StringTokenizer;
+import java.util.prefs.BackingStoreException;
+import java.util.prefs.Preferences;
 
 /*
 Copyright (c) 2003-2013,  Pete Sanderson and Kenneth Vollmar

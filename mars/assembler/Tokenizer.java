@@ -2,8 +2,10 @@ package mars.assembler;
 
 import mars.*;
 
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /*
 Copyright (c) 2003-2013,  Pete Sanderson and Kenneth Vollmar

@@ -1,8 +1,8 @@
 package mars.venus;
 
-import mars.*;
+import mars.Globals;
 
-import java.io.*;
+import java.io.File;
 
 /*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

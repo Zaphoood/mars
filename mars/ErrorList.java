@@ -1,7 +1,7 @@
 package mars;
 
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.util.ArrayList;
 /*
 Copyright (c) 2003-2012,  Pete Sanderson and Kenneth Vollmar
 

@@ -1,11 +1,17 @@
 package mars;
 
-import mars.assembler.*;
-import mars.mips.instructions.*;
-import mars.mips.hardware.*;
-import mars.util.*;
+import mars.assembler.SymbolTable;
+import mars.assembler.Token;
+import mars.assembler.TokenList;
+import mars.assembler.TokenTypes;
+import mars.mips.hardware.Coprocessor1;
+import mars.mips.hardware.RegisterFile;
+import mars.mips.instructions.BasicInstruction;
+import mars.mips.instructions.BasicInstructionFormat;
+import mars.mips.instructions.Instruction;
+import mars.util.Binary;
 
-import java.util.*;
+import java.util.ArrayList;
 
 /*
 Copyright (c) 2003-2013,  Pete Sanderson and Kenneth Vollmar

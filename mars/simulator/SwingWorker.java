@@ -1,6 +1,6 @@
 package mars.simulator;
 
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 
 /*-----------------------------------------------------
  * This file downloaded from the Sun Microsystems URL given below.

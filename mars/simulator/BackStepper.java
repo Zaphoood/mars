@@ -1,11 +1,11 @@
 package mars.simulator;
 
-import mars.*;
-import mars.venus.*;
-import mars.mips.hardware.*;
-import mars.mips.instructions.*;
-
-import java.util.*;
+import mars.Globals;
+import mars.ProgramStatement;
+import mars.mips.hardware.Coprocessor0;
+import mars.mips.hardware.Coprocessor1;
+import mars.mips.hardware.RegisterFile;
+import mars.mips.instructions.Instruction;
 
 /*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

@@ -1,8 +1,10 @@
 package mars.assembler;
 
-import mars.*;
-import mars.util.*;
-import mars.mips.hardware.*;
+import mars.Globals;
+import mars.mips.hardware.Coprocessor1;
+import mars.mips.hardware.Register;
+import mars.mips.hardware.RegisterFile;
+import mars.util.Binary;
 	
 	/*
 Copyright (c) 2003-2008,  Pete Sanderson and Kenneth Vollmar

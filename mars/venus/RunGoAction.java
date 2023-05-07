@@ -1,15 +1,14 @@
 package mars.venus;
 
-import mars.*;
-import mars.simulator.*;
-import mars.mips.hardware.*;
-import mars.util.*;
+import mars.Globals;
+import mars.ProcessingException;
+import mars.mips.hardware.RegisterFile;
+import mars.simulator.ProgramArgumentList;
+import mars.simulator.Simulator;
+import mars.util.SystemIO;
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import java.io.*;
+import java.awt.event.ActionEvent;
 	
 	/*
 Copyright (c) 2003-2007,  Pete Sanderson and Kenneth Vollmar

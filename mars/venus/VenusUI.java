@@ -1,14 +1,15 @@
 package mars.venus;
 
-import mars.*;
-import mars.mips.dump.*;
+import mars.Globals;
+import mars.Settings;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.event.*;
-import java.io.*;
-import java.net.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.net.URL;
 
 /*
 Copyright (c) 2003-2013,  Pete Sanderson and Kenneth Vollmar

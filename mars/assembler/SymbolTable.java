@@ -1,8 +1,10 @@
 package mars.assembler;
 
-import mars.*;
+import mars.ErrorList;
+import mars.ErrorMessage;
+import mars.Globals;
 
-import java.util.*;
+import java.util.ArrayList;
 
 /*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

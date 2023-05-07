@@ -1,8 +1,9 @@
 package mars.simulator;
 
-import mars.mips.hardware.*;
-import mars.mips.instructions.*;
-import mars.util.*;
+import mars.mips.hardware.Coprocessor0;
+import mars.mips.hardware.RegisterFile;
+import mars.mips.instructions.Instruction;
+import mars.util.Binary;
 
 /*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

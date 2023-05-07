@@ -1,16 +1,23 @@
 package mars;
 
-import mars.venus.*;
-import mars.util.*;
-import mars.mips.dump.*;
+import mars.mips.dump.DumpFormat;
+import mars.mips.dump.DumpFormatLoader;
 import mars.mips.hardware.*;
-import mars.simulator.*;
+import mars.simulator.ProgramArgumentList;
+import mars.util.Binary;
+import mars.util.FilenameFinder;
+import mars.util.MemoryDump;
+import mars.venus.VenusUI;
 
-import java.io.*;
-import java.util.*;
-import java.awt.*;
 import javax.swing.*;
-import javax.swing.JOptionPane;   // KENV 9/8/2004
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Observable;
+import java.util.Observer;
 
 /*
 Copyright (c) 2003-2012,  Pete Sanderson and Kenneth Vollmar
@@ -451,7 +458,7 @@ public class MarsLaunch {
         try {
             Globals.getSettings().setBooleanSettingNonPersistent(Settings.DELAYED_BRANCHING_ENABLED, delayedBranching);
             Globals.getSettings().setBooleanSettingNonPersistent(Settings.SELF_MODIFYING_CODE_ENABLED, selfModifyingCode);
-            String mainFileName =  filenameList.get(0);
+            String mainFileName = filenameList.get(0);
             File mainFile = new File(mainFileName).getAbsoluteFile();// First file is "main" file
             ArrayList filesToAssemble;
             if (assembleProject) {

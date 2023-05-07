@@ -1,14 +1,18 @@
 package mars.venus;
 
 import mars.*;
-import mars.util.*;
-import mars.mips.hardware.*;
+import mars.mips.hardware.Coprocessor0;
+import mars.mips.hardware.Coprocessor1;
+import mars.mips.hardware.Memory;
+import mars.mips.hardware.RegisterFile;
+import mars.util.FilenameFinder;
+import mars.util.SystemIO;
 
-import java.util.*;
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.io.File;
+import java.util.ArrayList;
  
  /*
 Copyright (c) 2003-2010,  Pete Sanderson and Kenneth Vollmar

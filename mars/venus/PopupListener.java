@@ -1,7 +1,8 @@
 package mars.venus;
 
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /*
 Copyright (c) 2003-2006,  Pete Sanderson and Kenneth Vollmar

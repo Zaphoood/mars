@@ -28,10 +28,12 @@
 package mars.venus;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.text.*;
-import java.util.*;
+import java.io.FileReader;
+import java.io.Writer;
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Properties;
+import java.util.TimeZone;
 
 /* HardcopyWriter class from the book "Java Examples in a Nutshell,
  * 3rd Edition" by David Flanagan.  Publisher is O'Reilly, ISBN is

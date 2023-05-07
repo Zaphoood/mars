@@ -1,15 +1,20 @@
 package mars.venus.editors.jeditsyntax;
 
-import mars.venus.editors.jeditsyntax.tokenmarker.*;
-import mars.venus.editors.MARSTextEditingArea;
+import mars.Globals;
 import mars.venus.EditPane;
-import mars.*;
+import mars.venus.editors.MARSTextEditingArea;
+import mars.venus.editors.jeditsyntax.tokenmarker.MIPSTokenMarker;
 
-import java.awt.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
-import javax.swing.undo.*;
 import javax.swing.*;
+import javax.swing.event.CaretEvent;
+import javax.swing.event.CaretListener;
+import javax.swing.event.UndoableEditEvent;
+import javax.swing.event.UndoableEditListener;
+import javax.swing.undo.CannotRedoException;
+import javax.swing.undo.CannotUndoException;
+import javax.swing.undo.CompoundEdit;
+import javax.swing.undo.UndoManager;
+import java.awt.*;
 
 
 /**

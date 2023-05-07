@@ -1,14 +1,13 @@
 package mars.simulator;
 
-import mars.*;
-import mars.venus.*;
-import mars.util.*;
-import mars.mips.hardware.*;
-import mars.mips.instructions.*;
+import mars.Globals;
+import mars.mips.hardware.AddressErrorException;
+import mars.mips.hardware.Memory;
+import mars.mips.hardware.Register;
+import mars.mips.hardware.RegisterFile;
 
-import java.util.*;
-import javax.swing.*;
-import java.awt.event.*;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 	
 	/*
 Copyright (c) 2003-2008,  Pete Sanderson and Kenneth Vollmar

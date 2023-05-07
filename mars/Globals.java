@@ -1,14 +1,16 @@
 package mars;
 
-import mars.mips.instructions.syscalls.*;
-import mars.mips.instructions.*;
-import mars.mips.hardware.*;
-import mars.assembler.*;
-import mars.venus.*;
-import mars.util.*;
+import mars.assembler.SymbolTable;
+import mars.mips.hardware.Memory;
+import mars.mips.instructions.InstructionSet;
+import mars.mips.instructions.syscalls.SyscallNumberOverride;
+import mars.util.PropertiesFile;
+import mars.venus.VenusUI;
 
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Properties;
+import java.util.StringTokenizer;
 	
 /*
 Copyright (c) 2003-2008,  Pete Sanderson and Kenneth Vollmar

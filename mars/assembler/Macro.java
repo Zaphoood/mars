@@ -1,15 +1,14 @@
 package mars.assembler;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
 import mars.ErrorList;
 import mars.ErrorMessage;
 import mars.MIPSprogram;
-import mars.mips.hardware.RegisterFile;
 import mars.mips.hardware.Coprocessor0;
 import mars.mips.hardware.Coprocessor1;
+import mars.mips.hardware.RegisterFile;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 /*
 Copyright (c) 2013-2014.

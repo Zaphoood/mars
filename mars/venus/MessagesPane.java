@@ -1,19 +1,22 @@
 package mars.venus;
 
-import mars.*;
-
-import javax.swing.*;
-import javax.swing.text.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.concurrent.ArrayBlockingQueue;
-import javax.swing.event.DocumentListener;
-import javax.swing.undo.UndoableEdit;
-
+import mars.ErrorList;
+import mars.Globals;
 import mars.simulator.Simulator;
 
+import javax.swing.*;
 import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.NavigationFilter;
 import javax.swing.text.Position.Bias;
+import javax.swing.undo.UndoableEdit;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.concurrent.ArrayBlockingQueue;
 
 /*
 Copyright (c) 2003-2010,  Pete Sanderson and Kenneth Vollmar

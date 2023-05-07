@@ -1,18 +1,21 @@
 package mars.venus;
 
-import mars.simulator.*;
-import mars.*;
-import mars.util.*;
-import mars.mips.hardware.*;
+import mars.Globals;
+import mars.mips.hardware.MemoryConfiguration;
+import mars.mips.hardware.MemoryConfigurations;
+import mars.simulator.Simulator;
+import mars.util.Binary;
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.text.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
-import java.io.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
 	
 	/*
 Copyright (c) 2003-2009,  Pete Sanderson and Kenneth Vollmar

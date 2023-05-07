@@ -1,16 +1,19 @@
 package mars.venus;
 
-import mars.*;
-import mars.simulator.*;
+import mars.Globals;
+import mars.ProgramStatement;
+import mars.Settings;
 import mars.mips.hardware.*;
-import mars.mips.instructions.*;
+import mars.simulator.Simulator;
+import mars.simulator.SimulatorNotice;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.table.*;
 import javax.swing.event.*;
+import javax.swing.table.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.*;
 	
 	/*
 Copyright (c) 2003-2007,  Pete Sanderson and Kenneth Vollmar

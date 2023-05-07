@@ -1,16 +1,24 @@
 package mars.venus;
 
-import mars.*;
-import mars.util.*;
-import mars.simulator.*;
-import mars.mips.hardware.*;
+import mars.Globals;
+import mars.Settings;
+import mars.mips.hardware.AccessNotice;
+import mars.mips.hardware.Coprocessor0;
+import mars.mips.hardware.Register;
+import mars.mips.hardware.RegisterAccessNotice;
+import mars.simulator.Simulator;
+import mars.simulator.SimulatorNotice;
+import mars.util.Binary;
 
 import javax.swing.*;
+import javax.swing.event.TableModelEvent;
+import javax.swing.table.AbstractTableModel;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.table.*;
-import javax.swing.event.*;
+import java.awt.event.MouseEvent;
+import java.util.Observable;
+import java.util.Observer;
 
 /*
 Copyright (c) 2003-2009,  Pete Sanderson and Kenneth Vollmar

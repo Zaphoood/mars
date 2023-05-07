@@ -1,14 +1,21 @@
 package mars.simulator;
 
 import mars.*;
-import mars.venus.*;
-import mars.util.*;
-import mars.mips.hardware.*;
-import mars.mips.instructions.*;
+import mars.mips.hardware.AddressErrorException;
+import mars.mips.hardware.Coprocessor0;
+import mars.mips.hardware.Memory;
+import mars.mips.hardware.RegisterFile;
+import mars.mips.instructions.BasicInstruction;
+import mars.util.Binary;
+import mars.util.SystemIO;
+import mars.venus.RunGoAction;
+import mars.venus.RunSpeedPanel;
+import mars.venus.RunStepAction;
 
-import java.util.*;
 import javax.swing.*;
-import java.awt.event.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Observable;
 	
 	/*
 Copyright (c) 2003-2010,  Pete Sanderson and Kenneth Vollmar
