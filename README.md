@@ -1,6 +1,6 @@
 # MARS - Mips Assembly and Runtime Simulator
 
-This repository was forked from [Mars 4.5](http://courses.missouristate.edu/kenvollmar/mars/).
+This repository was forked from [Mars 4.5](https://computerscience.missouristate.edu/mars-mips-simulator.htm).
 It includes the following changes:
 
 - Improved argv handling. The name of the program is passed as the first element of argv.
